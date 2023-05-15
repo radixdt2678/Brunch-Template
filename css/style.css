@@ -340,6 +340,20 @@ body{
 header,.banner-section{
     overflow: hidden;
 }
+.banner-section::before {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    content: " ";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-position: right;
+    background-image: url(../images/banner-img.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
 .nav-bar{
     top: 0;
 }
@@ -378,15 +392,15 @@ ul li a:hover{
 }
 .vector-4{
     top: -59px;
-    right: -30px;
+    right: -10%;
 }
 .vector-5{
     top: 4vw;
     left: 40%;
 }
 .vector-6{
-    bottom: 0;
-    right: 30px;
+    bottom: 15px;
+    right: 0;
 }
 /*  */
 .plate-section .plate-card{
