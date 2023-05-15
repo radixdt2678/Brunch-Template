@@ -275,11 +275,11 @@ padding-right: 48px ;
     max-width: 100%;
     height: auto;
 }
-.vector-img-fluid{
+/* .vector-img-fluid{
     width: 10vw;
 	height: auto;
 	object-fit: cover;
-}
+} */
 /* Main Css */
 .line-height-150{
     line-height: 150px;
@@ -374,7 +374,7 @@ ul li a:hover{
 }
 .vector-3{
     bottom: 0;
-    left: 40%;
+    right: 0;
 }
 .vector-4{
     top: 6vw;
@@ -422,19 +422,21 @@ ul li a:hover{
 }
 .meal-section .meal-vector{
     right: 10%;
-    top: -2vw;
+    top: -3vw;
 }
 .meal-section .meal-vector-2{
     bottom: -5vw;
     right: -40px;
 }
 .meal-section .meal-vector-3{
-    left: 38%;
+    right: -14%;
     top: -3vw;
+    z-index: -1;
 }
 .meal-section .meal-vector-4{
-    bottom: 4vw;
-    left: 46%;
+    bottom: 2vw;
+    right: -10px;
+    z-index: -1;
 }
 .meal-section .meal-vector-5{
     right: 6%;
@@ -448,7 +450,7 @@ ul li a:hover{
 /* menu-section */
 .menu-section .btn::after, .store-section .btn::after{
     width: 190px;
-    height: 65px;
+    height: 62px;
 }
 .menu-section .btn ,.store-section .btn{
     margin-top: 10px;
@@ -630,8 +632,15 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
 }
 
 /* media Query */
-
+@media screen and (max-width:1400px) {
+    .vector-img-fluid{
+        width: 10vw;
+        height: auto;
+        object-fit: cover;
+    }
+}
 @media screen and (max-width:1200px) {
+    
     .font-19{
         font-size: 16px;
     }
@@ -672,7 +681,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
     
     .btn::after{
-        width: 207px;
+        width: 195px;
     }
     .menu-section .btn::after, .store-section .btn::after {
         width: 180px;
@@ -720,7 +729,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         height: 65px;
     }
     .menu-section .btn::after, .store-section .btn::after {
-        width: 175px;
+        width: 166px;
     }
     .contact-section .contact-vector-3 {
         right: -16%;
@@ -731,6 +740,11 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:991px) {
+    .meal-section .meal-content{
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     .font-19{
         font-size: 16px;
@@ -802,7 +816,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
 
 	.menu {
 		position: fixed;
-		width: 75%;
+		width: 100%;
 		height: 100%;
 		background-color: var(--bg-gray);
 		left: -100%;
@@ -840,7 +854,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
     /*  */
     .btn::after {
-        width: 187px;
+        width: 175px;
     }
     .banner-content p {
         line-height: 30px;
@@ -871,6 +885,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:575px) {
+    
     .store-section .card-title{
         width: 80%;
     }
