@@ -209,14 +209,22 @@ width: 100%;
 .pt-80{
     padding-top: 80px;
 }
-.pb-112{
+/*  */
+.pt-125{
+    padding-top: 125px;
+}
+.pb-100{
     padding-bottom: 112px;
 }
+.pb-125{
+    padding-bottom: 125px;
+}
+/*  */
 .p-0{
     padding: 0;
 }
 .pr-5 {
-padding-right: 48px ;
+    padding-right: 48px ;
 }
 .pt-1{
     padding-top: 4px;
@@ -236,6 +244,9 @@ padding-right: 48px ;
 }
 .mt-5{
     margin-top: 48px;
+}
+.ml-100{
+    margin-left: 100px;
 }
 
 .px-35{
@@ -271,15 +282,7 @@ padding-right: 48px ;
 .z-index-1{
     z-index: 1;
 }
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-}
-/* .vector-img-fluid{
-    width: 10vw;
-	height: auto;
-	object-fit: cover;
-} */
+
 /* Main Css */
 .line-height-150{
     line-height: 150px;
@@ -331,6 +334,12 @@ body{
 }
 
 /*  */
+.section-container{
+max-width: 1920px;
+margin: 0 auto;
+padding-left: 17px;
+padding-right: 17px;
+}
 .container{
     max-width: 1470px;
     margin: 0 auto;
@@ -340,20 +349,7 @@ body{
 header,.banner-section{
     overflow: hidden;
 }
-.banner-section::before {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    content: " ";
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-position: right;
-    background-image: url(../images/banner-img.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 10;
-}
+
 .nav-bar{
     top: 0;
 }
@@ -392,15 +388,15 @@ ul li a:hover{
 }
 .vector-4{
     top: -59px;
-    right: -10%;
+    right: -60px;
 }
 .vector-5{
     top: 4vw;
     left: 40%;
 }
 .vector-6{
-    bottom: 15px;
-    right: 0;
+    bottom: 60px;
+    right: 30px;
 }
 /*  */
 .plate-section .plate-card{
@@ -412,7 +408,6 @@ ul li a:hover{
     font-weight: 700;
 }
 .plate-section .plate-card .plate-img{
-    min-height: 310px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,6 +415,28 @@ ul li a:hover{
 /* meal-section */
 .meal-section{
     overflow: hidden;
+}
+.meal-section .best-meal-img img{
+    display: none;
+}
+.meal-section .best-meal-img{
+    width: 40%;
+}
+.meal-section::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/meal-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+}
+.meal-section .meal-content{
+    width: 40%;
+    margin: 0 auto;
 }
 .meal-section h2{
     letter-spacing: 1px;
@@ -489,14 +506,20 @@ ul li a:hover{
 }
 
 /*  */
-.slide-content{
+.menu-section .slide-wrapper .slide-img{
+    width: 45%;
+}
+.menu-section .slide-wrapper .slider-content{
+    width: 60%;
+}
+.slide-wrapper{
     display: flex!important;
 }
 .slick-dots {
 	display: flex!important;
 	justify-content: center!important;
 	margin: 0!important;
-	padding: 5rem 0!important;
+	padding-top: 50px;
 	list-style-type: none!important;
 }
 .slick-dots	li {
@@ -646,14 +669,52 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
 }
 
 /* media Query */
+
 @media screen and (max-width:1400px) {
+    .pt-65 {
+        padding-top: 40px;
+    }
+    .vector-6{
+        right: 0;
+    }
+    .btn::after{
+        width: 215px;
+        height: 70px;
+    }
     .vector-img-fluid{
         width: 10vw;
         height: auto;
         object-fit: cover;
     }
+    .banner-section .banner-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .font-122{
+        font-size: 100px;
+        letter-spacing: 1px;
+    }
+    .line-height-150 {
+        line-height: 120px;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .font-28 {
+        font-size: 24px;
+    }
+    .font-33 {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:1200px) {
+    .pt-125{
+        padding-top: 100px;
+    }
+    .pb-100{
+        padding-bottom: 90px;
+    }
     
     .font-19{
         font-size: 16px;
@@ -670,10 +731,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .font-44{
         font-size: 30px;
     }
-    .font-122{
-        font-size: 100px;
-        letter-spacing: 1px;
-    }
+    
     .font-100 , .font-67 , .font-78{
         font-size: 60px;
     }
