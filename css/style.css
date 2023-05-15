@@ -337,7 +337,7 @@ body{
     padding-left: 17px;
     padding-right: 17px;
 }
-header{
+header,.banner-section{
     overflow: hidden;
 }
 .nav-bar{
@@ -764,6 +764,15 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:768px) {
+    .vector ,.vector-2 ,.vector-3,.vector-4,.vector-5,.vector-6,
+    .meal-vector,.meal-vector-2,.meal-vector-3,.meal-vector-4,.meal-vector-5,
+    .meal-vector-6,.store-vector-1,.store-vector-2,.store-vector-3,.store-vector-4,
+    .store-vector-5,.store-vector-6,.store-vector-7,.contact-vector-1,.contact-vector-2,
+    .contact-vector-3,.contact-vector-4,.contact-vector-5,.contact-vector-6{
+        display: none;
+    }
+
+
     .store-section .card-title h2{
         padding: 0px 42px;
     }
