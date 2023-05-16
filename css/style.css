@@ -203,6 +203,9 @@ width: 100%;
 }
 
 /*  */
+.pt-150{
+	padding-top: 150px;
+}
 .pt-100{
     padding-top: 100px;
 }
@@ -357,7 +360,12 @@ padding-right: 10px;
 header,.banner-section{
     overflow: hidden;
 }
-
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
 .nav-bar{
     top: 0;
 }

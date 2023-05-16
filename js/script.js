@@ -38,3 +38,13 @@ $('.slider').slick({
           },
     ]
   });
+
+
+  /*  */
+
+var btn = document.getElementById("nav-btn")
+
+function navigation(){
+    btn.classList.toggle("fa-bars");
+    btn.classList.toggle("fa-xmark");
+}
