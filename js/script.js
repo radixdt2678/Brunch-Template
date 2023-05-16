@@ -2,9 +2,16 @@ $('.slider').slick({
     infinite: false,
     arrows: false,
     dots: true,
-    slidesToShow: 2.5,
+    slidesToShow: 3.5,
     slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 1950,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+        }
+      },
         {
           breakpoint: 1200,
           settings: {

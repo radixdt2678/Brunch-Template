@@ -436,7 +436,7 @@ ul li a:hover{
     display: none;
 }
 .meal-section .best-meal-img{
-    width: 40%;
+    width: 50%;
 }
 .meal-section::after{
     position: absolute;
@@ -447,12 +447,11 @@ ul li a:hover{
     background-position: center;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 .meal-section .meal-content{
-    width: 40%;
-    margin: 0 auto;
+    width: 50%;
 }
 .meal-section h2{
     letter-spacing: 1px;
@@ -477,12 +476,12 @@ ul li a:hover{
 }
 .meal-section .meal-vector-3{
     top: -100px;
-    left: -40%;
+    left: -37%;
     z-index: -1;
 }
 .meal-section .meal-vector-4{
     bottom: 0;
-    left: -15%;
+    left: -10%;
     z-index: -1;
 }
 .meal-section .meal-vector-5{
@@ -881,6 +880,13 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:768px) {
+    .contact-section .form-content{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .pt-150 {
+        padding-top: 100px;
+    }
     .menu-section .slide-wrapper .slide-img img{
         aspect-ratio: 1;
         height: 100%;
