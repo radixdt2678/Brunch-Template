@@ -50,6 +50,9 @@ h1 ,h2 ,h3, h4, h5, h6{
 .object-fit-cover {
 	object-fit: cover;
 }
+.object-fit-contain{
+    object-fit: contain;
+}
 
 .text-uppercase {
 	text-transform: uppercase;
@@ -611,7 +614,6 @@ ul li a:hover{
         transition: 0.3s;
         background-color: gray;
 }
-/*  */
 
 /*  */
 .contact-section{
@@ -660,6 +662,7 @@ ul li a:hover{
     right: 20px;
     bottom: 4vw;
 }
+
 /*  */
 ul{
     padding-inline-start: unset;
