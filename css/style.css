@@ -1007,8 +1007,8 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
     /*  */
     .btn::after {
-        width: 175px;
-        height: 58px;
+        width: 173px;
+        height: 57px;
     }
     .banner-content p {
         line-height: 30px;
@@ -1021,7 +1021,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         margin-bottom: 10px;
     }
     .contact-section .btn::after {
-        width: 207px;
+        width: 205px;
         height: 58px;
     }
     .col-2, .col-3 , .col-8 , .col-11{
@@ -1077,8 +1077,8 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         padding-right: 17px;
     }
     
-    .menu-section .btn::after, .store-section .btn::after {
-        width: 165px;
+    .menu-section .btn::after {
+        width: 173px;
     }
 }
 
