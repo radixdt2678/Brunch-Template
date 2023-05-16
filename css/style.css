@@ -345,14 +345,14 @@ body{
 .section-container{
 max-width: 1920px;
 margin: 0 auto;
-padding-left: 17px;
-padding-right: 17px;
+padding-left: 10px;
+padding-right: 10px;
 }
 .container{
     max-width: 1470px;
     margin: 0 auto;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 header,.banner-section{
     overflow: hidden;
@@ -396,7 +396,7 @@ ul li a:hover{
 }
 .vector-4{
     top: -59px;
-    right: -60px;
+    right: -80px;
 }
 .vector-5{
     top: -4vw;
@@ -468,13 +468,13 @@ ul li a:hover{
     right: -40px;
 }
 .meal-section .meal-vector-3{
-    right: -14%;
-    top: -3vw;
+    top: -100px;
+    left: -40%;
     z-index: -1;
 }
 .meal-section .meal-vector-4{
-    bottom: 2vw;
-    right: -10px;
+    bottom: 0;
+    left: -15%;
     z-index: -1;
 }
 .meal-section .meal-vector-5{
