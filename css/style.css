@@ -873,6 +873,10 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:768px) {
+    .menu-section .slide-wrapper .slide-img img{
+        aspect-ratio: 1;
+        height: 100%;
+    }
     .font-122 {
         font-size: 34px;
     }
