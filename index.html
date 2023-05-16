@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- slick slider -->
-    
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Main Css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -25,7 +23,9 @@
             <nav class="container">
                 <div class="mobile-nav">
                     <div class="logo">
-                        <img src="./images/logo.webp" alt="" height="115" width="116">
+                        <a href="/">
+                            <img src="./images/logo.webp" alt="" height="115" width="116">
+                        </a>
                     </div>
                     <label for="check" class="checkbtn">
                         <i class="fa fa-bars"></i>
@@ -36,7 +36,7 @@
                             <li><a href="" title="home" class="text-primary">Home</a></li>
                             <li><a href="" title="About" class="text-primary">About</a></li>
                             <li><a href="" title="Menu" class="text-primary">Menu</a></li>
-                            <li class="d-flex desk-logo"><img src="./images/logo.webp" alt="" height="115" width="116"></li>
+                            <li class="d-flex desk-logo"><a href="/"><img src="./images/logo.webp" alt="" height="115" width="116" class="d-block"></a></li>
                             <li><a href="" title="Blog" class="text-primary"> Blog</a></li>
                             <li><a href="" title="Shop" class="text-primary"> Shop</a></li>
                             <li><a href="" title="Contact" class="text-primary"> Contact</a></li>
@@ -60,22 +60,23 @@
         <div class="position-absolute vector-5">
             <img src="./images/banner-Shape-5.svg" alt="" height="341" width="363" class="vector-img-fluid">
         </div>
-        <div class="position-absolute vector-6">
-            <img src="./images/banner-Shape-6.svg" alt="">
-        </div>
+        
         <div class="container">
             <div class="d-flex pt-65 position-relative z-index-1 flex-lg-column-reverse">
-                <div class="banner-content col-6 position-relative">
+                <div class="banner-content col-6 position-relative text-lg-center">
                     <!--  -->
                     <div class="position-absolute vector-3">
                         <img src="./images/bannershap.svg" alt="" height="117" width="118" class="vector-img-fluid">
                     </div>
                     <!--  -->
                     <h1 class="font-122 col-10 line-height-150 text-primary">Have a Nice Meal</h1>
-                    <p class="font-28 col-11 pt-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, officia deserunt mollit anim id est laborum.</p>
+                    <p class="font-28 col-11 pt-100 mx-lg-auto">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, officia deserunt mollit anim id est laborum.</p>
                     <button class="btn font-28 text-primary ">Read More</button>
                 </div>
-                <div class="col-6 banner-img">
+                <div class="col-6 banner-img position-relative">
+                    <div class="position-absolute vector-6">
+                        <img src="./images/banner-Shape-6.svg" alt="">
+                    </div>
                     <img src="./images/banner-img.webp" alt="" height="915" width="899" class="position-relative ">
                 </div>
             </div>
@@ -90,7 +91,7 @@
                         <img src="./images/plate-img-1.png" alt="" height="234" width="234" class="object-fit-cover img-fluid">
                     </div>
                     <h2 class="font-33">Duis aute</h2>
-                    <p class="m-0">sint occaecat cupidatat non</p>
+                    <p class="m-0 font-28">sint occaecat cupidatat non</p>
                 </div>
                 <div>
                     <div class="plate-img">
@@ -98,14 +99,14 @@
                     </div>
                 
                     <h2 class="font-33">Duis aute</h2>
-                    <p class="m-0">sint occaecat cupidatat non</p>
+                    <p class="m-0 font-28">sint occaecat cupidatat non</p>
                 </div>
                 <div>
                     <div class="plate-img">
                         <img src="./images/plate-img-3.png" alt="" height="234" width="234" class="object-fit-cover img-fluid">
                     </div>
                     <h2 class="font-33">Duis aute</h2>
-                    <p class="m-0">sint occaecat cupidatat non</p>
+                    <p class="m-0 font-28">sint occaecat cupidatat non</p>
                 </div>
             </div>
         </div>
@@ -116,7 +117,7 @@
         <div class="position-absolute meal-vector-5"><img src="./images/meal-vector-5.webp" alt="" class="vector-img-fluid"></div>      
         <div class="position-absolute meal-vector-6"><img src="./images/meal-vector.webp" alt="" class="vector-img-fluid"></div>      
 
-            <div class="d-flex align-item-center flex-md-column">
+            <div class="d-flex align-item-center flex-lg-column">
                 <div class=" position-relative best-meal-img">
                     <!--  -->
                         <div class="position-absolute meal-vector-3"><img src="./images/meal-vector-3.webp" alt="" class="vector-img-fluid"></div> 
@@ -127,7 +128,7 @@
                 <div class=" position-relative meal-content pt-100 pb-125">
                     <h2 class="font-100 ">Best Meal
                         Brunch in NYC</h2>
-                    <p class="font-28  pt-100 pb-5">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Volutpat lacus laoreet non curabitur gravida. Dictum sit amet justo donec enim. Eu scelerisque felis imperdiet proin fermentum leo vel. Tincidunt lobortis feugiat vivamus at augue. Porttitor massa id neque aliquam vestibulum.
+                    <p class="font-28  pt-100 pb-5 pb-lg-2">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Volutpat lacus laoreet non curabitur gravida. Dictum sit amet justo donec enim. Eu scelerisque felis imperdiet proin fermentum leo vel. Tincidunt lobortis feugiat vivamus at augue. Porttitor massa id neque aliquam vestibulum.
                     </p>
                     <a href="" class="font-28 text-primary">Read Story</a>
                 </div>
@@ -135,17 +136,17 @@
     </section>
     <section class="menu-section pt-125 section-container  pb-100">
     <div>
-        <h2 class="font-78 text-center pb-5">Menu</h2>
+        <h2 class="font-78 text-center pb-5 pb-lg-2">Menu</h2>
         <p class="font-28 text-center col-8 mx-auto pb-5 pb-lg-0">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
-        <div class=" align-item-center pt-5 pb-5 gap-50 slider">
+        <div class=" align-item-center pt-5 pt-lg-0 pb-5 pb-lg-0 gap-50 slider">
            <div>
                 <div class="slide-wrapper align-item-center box-shadow ml-4 flex-lg-column ">
                     <div class="slide-img">
                         <img src="./images/slide-1.webp" alt="" height="416" width="320" class="object-fit-cover col-12">
                     </div>
-                    <div class="py-30 py-lg-3 slider-content">
+                    <div class="py-30 px-35 px-lg-3 py-lg-3 slider-content">
                         <h2 class="font-44">Americano</h2>
-                        <p>Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <p class="font-19">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
                         <button class="btn font-19">Order Now</button>
                     </div>
                 </div>
@@ -156,9 +157,9 @@
                     <div class="slide-img">
                         <img src="./images/slide-2.webp" alt="" height="416" width="320" class="object-fit-cover col-12">
                     </div>
-                    <div class="py-30 py-lg-3 slider-content">
+                    <div class="py-30 px-35 px-lg-3 py-lg-3 slider-content">
                         <h2 class="font-44">Long Blank</h2>
-                        <p>Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <p class="font-19">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
                         <button class="btn font-19">Order Now</button>
                     </div>
                 </div>
@@ -170,9 +171,9 @@
                     <div class="slide-img">
                         <img src="./images/slide-3.webp" alt="" height="416" width="320" class="object-fit-cover col-12">
                     </div>
-                    <div class="py-30 py-lg-3 slider-content">
+                    <div class="py-30 px-35 px-lg-3 py-lg-3 slider-content">
                         <h2 class="font-44">Cafe Latte</h2>
-                        <p>Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <p class="font-19">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
                         <button class="btn font-19">Order Now</button>
                     </div>
                 </div>
@@ -184,9 +185,9 @@
                     <div class="slide-img">
                         <img src="./images/slide-1.webp" alt="" height="416" width="320" class="object-fit-cover col-12">
                     </div>
-                    <div class="py-30 py-lg-3 slider-content">
+                    <div class="py-30 px-35 px-lg-3 py-lg-3 slider-content">
                         <h2 class="font-44">Americano</h2>
-                        <p>Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <p class="font-19">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
                         <button class="btn font-19">Order Now</button>
                     </div>
                 </div>
@@ -207,12 +208,12 @@
         <div class="position-absolute store-vector-7"><img src="./images/Store-v-7.svg" alt="" class="vector-img-fluid"></div>
 
         <div class="container">
-            <h2 class="font-78 text-center position-relative">Store</h2>
-            <p class="font-28 text-center col-10 mx-auto pt-5 position-relative">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
+            <h2 class="font-78 text-center position-relative pb-lg-2">Store</h2>
+            <p class="font-28 text-center col-10 mx-auto pt-5 pt-lg-0 position-relative">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
             <div class="d-flex align-item-center gap-50 pt-65 flex-md-column">
 
                 <div class="box-shadow position-relative bg-white z-index-1">
-                    <div class=""> 
+                    <div > 
                         <img src="./images/card-1.webp" alt="" height="371" width="468" class="object-fit-cover col-12 h-100">
                     </div>
                     <div class="card-title ">
@@ -255,11 +256,11 @@
     </section>
     <section class="profile-section pt-125 pb-100 position-relative bg-white section-container">
         <div class="container">
-            <div class="d-flex align-item-center flex-lg-column">
+            <div class="d-flex align-item-center flex-lg-column-reverse">
                 <div class="profile-recipes col-6">
                     <iframe width="968" height="613" src="https://www.youtube.com/embed/weMHNBo70ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div class="col-6 px-35 pt-lg-3">
+                <div class="col-6 px-35 pt-lg-3 pb-lg-5">
                     <h2 class="font-67">Company Profile</h2>
                     <p class="font-28">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
                     <div class="d-flex align-item-center social-icon gap-50">
@@ -279,7 +280,7 @@
         <div class="position-absolute contact-vector-5"><img src="./images/contact-vector-5.svg" alt=""></div>
         <div class="position-absolute contact-vector-6"><img src="./images/contact-vector-6.svg" alt=""></div>
 
-        <div class="d-flex align-item-center flex-lg-column">
+        <div class="d-flex align-item-center flex-lg-column-reverse">
             <div class="col-6 ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" class="col-lg-12 object-fit-cover col-12" height="1023" width="881"></iframe>
             </div>
@@ -303,8 +304,9 @@
         </div>
     </section>
     <footer class="pt-5 pb-5 bg-secondary position-relative section-container">
-        <div class="container">
+        
             <div class="d-flex  gap-20 col-12 pt-5 pt-lg-0 flex-lg-column">
+
                 <div class="d-flex align-item-center col-3 justify-content-center">
                     <img src="./images/logo.webp" alt="" height="181" width="185">
                 </div>
@@ -348,7 +350,7 @@
                             <li><a href="" class="font-22 text-primary">Enim lobortis</a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-flex flex-column gap-20 gap-xl-0">
                         <img src="./images/logo.webp" alt="" height="91" width="92">
                         <h6 class="font-22">Copyright <sup>&#169;</sup> 2020 Freepik
                             Company S.L. All rights reserved.</h6>
@@ -359,7 +361,7 @@
                         </div>
                     </div>
             </div>
-        </div>
+        
     </footer>
     <!--  -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

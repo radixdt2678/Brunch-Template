@@ -224,7 +224,7 @@ width: 100%;
     padding: 0;
 }
 .pr-5 {
-    padding-right: 48px ;
+    padding-right: 150px ;
 }
 .pt-1{
     padding-top: 4px;
@@ -252,10 +252,6 @@ width: 100%;
 .px-35{
     padding-left: 35px;
     padding-right: 35px;
-}
-.py-30{
-    padding-left: 30px;
-    padding-right: 30px;
 }
 .m-0 {
 	margin: 0;
@@ -289,6 +285,10 @@ width: 100%;
 }
 a {
 	text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: var(--bg-darkblue);
 }
 
 body{
@@ -308,6 +308,10 @@ body{
 	font-size: 30px;
 	cursor: pointer;
 }
+.desk-logo a:hover{
+    color: unset;
+    border-bottom: unset;
+}
 /*  */
 
 .btn{
@@ -317,6 +321,7 @@ body{
     font-weight: 700;
     margin-top: 80px;
     background-color: transparent;
+    cursor: pointer;
 }
 .btn::after{
     content: " ";
@@ -391,12 +396,12 @@ ul li a:hover{
     right: -60px;
 }
 .vector-5{
-    top: 4vw;
+    top: -4vw;
     left: 40%;
 }
 .vector-6{
-    bottom: 60px;
-    right: 30px;
+    bottom: 0px;
+    right: -190px;
 }
 /*  */
 .plate-section .plate-card{
@@ -566,7 +571,7 @@ ul li a:hover{
     right: -20px;
 }
 .store-vector-7{
-    bottom: -5vw;
+    bottom: -4.5vw;
     left: 50%;
 }
 .store-vector-3{
@@ -602,6 +607,12 @@ ul li a:hover{
     color: var(--text-white);
     font-size: 30px;
 }
+.profile-section .social-icon a:hover , footer .social-icon a:hover{   
+        transition: 0.3s;
+        background-color: gray;
+}
+/*  */
+
 /*  */
 .contact-section{
     overflow: hidden;
@@ -629,6 +640,7 @@ ul li a:hover{
 .contact-section .contact-vector-2{
     right: 10%;
     bottom: -4vw;
+    z-index: -1;
 }
 .contact-section .contact-vector-3{
     right: -6%;
@@ -681,11 +693,11 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         width: 215px;
         height: 70px;
     }
-    .vector-img-fluid{
+    /* .vector-img-fluid{
         width: 10vw;
         height: auto;
         object-fit: cover;
-    }
+    } */
     .banner-section .banner-img img{
         width: 100%;
         height: 100%;
@@ -707,13 +719,16 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .font-33 {
         font-size: 30px;
     }
+    .pr-5 {
+        padding-right: 50px;
+    }
 }
 @media screen and (max-width:1200px) {
     .pt-125{
         padding-top: 100px;
     }
     .pb-100{
-        padding-bottom: 90px;
+        padding-bottom: 70px;
     }
     
     .font-19{
@@ -741,21 +756,17 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .meal-section h2{
         line-height: unset;
     }
-    .meal-section .meal-content{
-        margin-left: 50px;
-    }
     .plate-section .plate-card {
         font-size: 20px;
     }
-    .py-30{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
     .btn::after{
         width: 195px;
     }
-    .menu-section .btn::after, .store-section .btn::after {
+    .menu-section .btn::after{
+        width: 175px;
+        height: 55px;
+    }
+    .store-section .btn::after {
         width: 180px;
         height: 60px;
     }
@@ -763,8 +774,23 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         width: 249px;
         height: 67px;
     }
+    .gap-xl-0{
+        gap: 0px;
+    }
 }
 @media screen and (max-width:1191px) {
+    .slick-dots {
+        padding-top: 10px;
+    }
+    .pt-lg-0{
+        padding-top: 0;
+    }
+    .pb-lg-2{
+        padding-bottom: 8px;
+    }
+    .pb-lg-0{
+        padding-bottom: 0px;
+    }
     .font-19{
         font-size: 16px;
     }
@@ -812,16 +838,18 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:991px) {
-    .meal-section .meal-content{
-        margin-left: 0px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 
+    .contact-section .btn::after {
+        width: 219px;
+        height: 60px;
+    }
+    .menu-section .btn::after, .store-section .btn::after {
+        width: 175px;
+    }
     .font-19{
         font-size: 16px;
     }
-    .font-22,.font-28,.font-33{
+    .font-22,.font-28{
         font-size: 18px;
     }
     .font-44{
@@ -834,8 +862,30 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .font-100 , .font-67 , .font-78{
         font-size: 30px;
     }
+    .store-section .card-title {
+        width: 80%;
+    }
+    .store-section .card-title h2 {
+        padding: 0px 42px;
+    }
 }
 @media screen and (max-width:768px) {
+    .font-122 {
+        font-size: 34px;
+    }
+    .banner-section .banner-img img{
+        aspect-ratio: 1.3;
+    }
+    .store-section .btn::after {
+        width: 165px;
+    }
+    .pt-125 {
+        padding-top: 50px;
+    }
+    .pb-125{
+        padding-bottom: 0px;
+    }
+    
     .vector ,.vector-2 ,.vector-3,.vector-4,.vector-5,.vector-6,
     .meal-vector,.meal-vector-2,.meal-vector-3,.meal-vector-4,.meal-vector-5,
     .meal-vector-6,.store-vector-1,.store-vector-2,.store-vector-3,.store-vector-4,
@@ -843,13 +893,24 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .contact-vector-3,.contact-vector-4,.contact-vector-5,.contact-vector-6{
         display: none;
     }
-
-
+    .meal-section .meal-content ,
+    .meal-section .best-meal-img ,
+    .meal-section .best-meal-img img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .meal-section::after {
+        display: none;
+    }
     .store-section .card-title h2{
         padding: 0px 42px;
     }
     .btn {
         margin-top: 20px;
+    }
+    .flex-lg-column{
+        flex-direction: column;
     }
     .flex-lg-column-reverse{
         flex-direction: column-reverse;
@@ -866,6 +927,9 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .pb-lg-0{
         padding-bottom: 0px;
     }
+    .pb-lg-5{
+        padding-bottom: 48px;
+    }
     .pt-lg-0{
         padding-top: 0px;
     }
@@ -876,7 +940,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .flex-lg-column{
         flex-direction: column;
     }
-    .font-22,.font-28,.font-33{
+    .font-22,.font-28{
         font-size: 16px;
     }
     .mobile-nav{
@@ -896,6 +960,8 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
 	}
 
 	.menu {
+        padding-top: 100px;
+        display: block;
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -908,12 +974,15 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
 
 	.nav-bar .menu li {
 		display: block;
-		margin: 50px 0px;
+		margin: 10px 0px;
 	}
     .nav-bar .menu li a{
         line-height: 50px;
     }
-
+    .text-lg-center{
+        text-align: center;
+    } ;
+   
 	.nav-bar .menu {
 		display: block;
 	}
@@ -936,6 +1005,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     /*  */
     .btn::after {
         width: 175px;
+        height: 58px;
     }
     .banner-content p {
         line-height: 30px;
@@ -951,7 +1021,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         width: 207px;
         height: 58px;
     }
-    .col-2, .col-3{
+    .col-2, .col-3 , .col-8 , .col-11{
         width: 100%;
     }
     footer .font-33{
@@ -964,6 +1034,28 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         padding-top: 24px;
         padding-bottom: 24px;
     }
+    .profile-section .profile-recipes iframe , .meal-section .best-meal-img img , .contact-section iframe{
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+    .menu-section .slide-wrapper .slider-content ,.menu-section .slide-wrapper .slide-img {
+        width: 100%;
+    }
+    .px-lg-3{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .px-35 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .profile-section .social-icon .icon{
+        font-size: 20px;
+    }
+    .profile-section .social-icon .facebook, .profile-section .social-icon .insta, .profile-section .social-icon .twitter{
+    width: 35px;
+    height: 35px;
+}
 }
 @media screen and (max-width:575px) {
     
