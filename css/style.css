@@ -403,12 +403,14 @@ ul li a:hover{
     right: 0;
 }
 .vector-4{
-    top: -59px;
-    right: -80px;
+    top: -120px;
+    right: -40%;
+    z-index: -1;
 }
 .vector-5{
     top: -4vw;
     left: 40%;
+    z-index: -1;
 }
 .vector-6{
     bottom: 0px;
@@ -703,11 +705,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         width: 215px;
         height: 70px;
     }
-    /* .vector-img-fluid{
-        width: 10vw;
-        height: auto;
-        object-fit: cover;
-    } */
+   
     .banner-section .banner-img img{
         width: 100%;
         height: 100%;
@@ -733,7 +731,66 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         padding-right: 50px;
     }
 }
+@media screen and (max-width:1280px) {
+    .vector-2 {
+        bottom: -15vw;
+        left: -125px;
+    }
+    .vector {
+        top: 0vw;
+        left: -100px;
+    }
+    .vector-4 {
+        top: -65px;
+        right: -18%;
+    }
+    .meal-section .meal-vector-3{
+        left: -45%;
+    }
+    .meal-section .meal-vector-5 {
+        right: 0;
+    }
+    .meal-section .meal-vector-2 {
+        bottom: -16vw;
+        right: -90px;
+    }
+    .meal-section .meal-vector-6 {
+        right: 3%;
+        bottom: 3vw;
+    }
+    .store-vector-3 {
+        top: -5vw;
+        left: -15%;
+    }
+    .store-vector-4 {
+        left: -13%;
+    }
+    .store-vector-6 {
+        right: -40px;
+    }
+    .contact-section .contact-vector-3 {
+        right: -7%;
+        top: -15vw;
+    }
+    .contact-section .contact-vector-4 {
+        bottom: -3vw;
+        left: 30%;
+    }
+    .contact-section .btn::after {
+        width: 263px;
+    }
+}
 @media screen and (max-width:1200px) {
+    .vector-img-fluid{
+        object-fit: contain;
+        width: 200px;
+        height: 100px;
+    }
+    .vector2-img-fluid{
+        object-fit: contain;
+        width: 300px;
+        height: 250px;
+    }
     .pt-125{
         padding-top: 100px;
     }
@@ -848,7 +905,62 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
 }
 @media screen and (max-width:991px) {
-
+    .btn::after {
+        width: 185px;
+        height: 60px;
+    }
+    .vector-2 {
+        left: -115px;
+    }
+    .vector {
+        top: 0;
+        left: -100px;
+    }
+    .vector-3 {
+        right: -50px;
+    }
+    .vector-4 {
+        top: -60px;
+        right: -30%;
+    }
+    .vector-5 {
+        top: 0;
+    }
+    .vector-6 {
+        right: -20px;
+        bottom: 30px;
+    }
+    .meal-section .meal-vector-5 {
+        right: -5%;
+        top: 0vw;
+    }
+    .meal-section .meal-vector-6 {
+        right: -40px;
+        bottom: 1vw;
+    }
+    .meal-section .meal-vector-2 {
+        bottom: -10vw;
+        right: -100px;
+    }
+    .meal-section .meal-vector-4 {
+        left: -30%;
+    }
+    .store-vector-4 {
+        left: -25%;
+    }
+    .store-vector-3 {
+        left: -22%;
+    }
+    .store-vector-6 {
+        top: 0vw;
+        right: -70px;
+    }
+    .contact-section .contact-vector-4 {
+        left: 30%;
+    }
+    .flex-xl-wrap{
+        flex-wrap: wrap;
+    }
     .contact-section .btn::after {
         width: 219px;
         height: 60px;
@@ -1036,7 +1148,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         height: 500px;
     }
     .contact-section form input, textarea {
-        margin-bottom: 10px;
+        margin-bottom: 10px;    
     }
     .contact-section .btn::after {
         width: 205px;

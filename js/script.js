@@ -13,7 +13,7 @@ $('.slider').slick({
         }
       },
         {
-          breakpoint: 1200,
+          breakpoint: 1290,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
