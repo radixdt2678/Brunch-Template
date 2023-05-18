@@ -328,16 +328,18 @@ body{
     margin-top: 80px;
     background-color: transparent;
     cursor: pointer;
+    transform-style: preserve-3d;
 }
 .btn::after{
     content: " ";
     position: absolute;
-    z-index: -1;
+   /*  z-index: -1; */
     background-color: var(--bg-primary);
     width: 235px;
     height: 72px;
     top: 5px;
     left: 5px;
+    transform: translateZ(-1px);
 }
 .btn:hover::after{
     top: 0;
@@ -586,14 +588,11 @@ ul li a:hover{
     bottom: -4.5vw;
     left: 50%;
 }
-.store-vector-3{
-    top: -2vw;
+.store-vector-3 {
+    top: -4vw;
     left: -8%;
 }
-.store-vector-4{
-    top: -3.5vw;
-    left: -10%;
-}
+
 /*  */
 
 .profile-section .profile-recipes iframe{
@@ -669,7 +668,7 @@ ul li a:hover{
 }
 .contact-section .contact-vector-6{
     right: 20px;
-    bottom: 4vw;
+    bottom: 3vw;
 }
 
 /*  */
@@ -762,9 +761,6 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
         top: -5vw;
         left: -15%;
     }
-    .store-vector-4 {
-        left: -13%;
-    }
     .store-vector-6 {
         right: -40px;
     }
@@ -778,6 +774,12 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     }
     .contact-section .btn::after {
         width: 263px;
+    }
+    footer .copyright {
+        gap: 0px;
+    }
+    footer .font-22{
+        font-size: 20px;
     }
 }
 @media screen and (max-width:1200px) {
@@ -945,9 +947,6 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     .meal-section .meal-vector-4 {
         left: -30%;
     }
-    .store-vector-4 {
-        left: -25%;
-    }
     .store-vector-3 {
         left: -22%;
     }
@@ -1021,7 +1020,7 @@ footer .social-icon .facebook , footer .social-icon .insta , footer .social-icon
     
     .vector ,.vector-2 ,.vector-3,.vector-4,.vector-5,.vector-6,
     .meal-vector,.meal-vector-2,.meal-vector-3,.meal-vector-4,.meal-vector-5,
-    .meal-vector-6,.store-vector-1,.store-vector-2,.store-vector-3,.store-vector-4,
+    .meal-vector-6,.store-vector-1,.store-vector-2,.store-vector-3,
     .store-vector-5,.store-vector-6,.store-vector-7,.contact-vector-1,.contact-vector-2,
     .contact-vector-3,.contact-vector-4,.contact-vector-5,.contact-vector-6{
         display: none;
