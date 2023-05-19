@@ -2,6 +2,7 @@ $('.slider').slick({
     infinite: false,
     arrows: false,
     dots: true,
+
     slidesToShow: 3.5,
     slidesToScroll: 1,
     responsive: [
