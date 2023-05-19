@@ -182,6 +182,7 @@ width: 100%;
 }
 .font-family-open-sans-bold {
     font-family: "Open Sans-bold",sans-serif;
+    font-weight: 700;
 }
 .font-family-open-sans-semi-bold{
     font-family: "Open Sans-semi-bold",sans-serif;
