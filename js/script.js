@@ -56,3 +56,15 @@ function navigation(){
     btn.classList.toggle("fa-bars");
     btn.classList.toggle("fa-xmark");
 }
+
+/* Header */
+
+$(window).scroll(function() {     
+  var scroll = $(window).scrollTop();
+  if (scroll > 0) {
+      $("#header").addClass("active");
+  }
+  else {
+      $("#header").removeClass("active");
+  }
+});
